@@ -22,7 +22,7 @@ public class RestHelloWorld {
         return "Hello World"; // string to be returned
     }
     
-    @Path("helloJSON")
+    @Path("helloJson")
     @GET
     @Produces("application/json")
     public List<String> helloJSONList(){
@@ -33,7 +33,7 @@ public class RestHelloWorld {
         return jsonList;
     }
     
-    @Path("helloPOST")
+    @Path("helloPost")
     @POST
     @Produces("application/json")
     public List<String> helloPost(String inputStr){
